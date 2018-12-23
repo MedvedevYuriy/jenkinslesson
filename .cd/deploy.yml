@@ -1,0 +1,12 @@
+---
+- hosts: all
+  become: true
+  tasks:
+    - name: stopping web-calc
+      service: name=web-calc state=stopped
+
+    - name: update web-calc
+      apt: name=web-calc state=latest update_cache=yes
+
+    - name: start web-calc
+      service: name=web-calc state=started
