@@ -12,7 +12,7 @@ echo -e "#!/bin/bash\nsystemctl daemon-reload\nsystemctl start web-calc\nsystemc
 
 chmod 0755 $dpath/DEBIAN/postinst
 
-cp goapp_build $dpath/opt/goapp/
+cp goappbuild $dpath/opt/goapp/
 
 FILE=$dpath/etc/systemd/system/web-calc.service
 cat << EOF > $FILE
