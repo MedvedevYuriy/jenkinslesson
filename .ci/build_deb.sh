@@ -21,7 +21,7 @@ Description=Web Calc
 After=network.target
 [Service]
 Type=simple
-ExecStart=/opt/goapp/goapp_build
+ExecStart=/opt/goapp/goappbuild
 [Install]
 WantedBy=multi-user.target
 EOF
